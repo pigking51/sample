@@ -1,7 +1,7 @@
 package dw.smaple.service;
 
+import dw.smaple.model.User;
 import dw.smaple.repository.UserRepository;
-import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
@@ -26,4 +26,4 @@ public class UserDetailService implements UserDetailsService {
         return user.get();
     }
 
-}
+  }

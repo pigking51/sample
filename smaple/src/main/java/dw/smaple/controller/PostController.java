@@ -1,4 +1,4 @@
 package dw.smaple.controller;
 
-public class userController {
+public class PostController {
 }

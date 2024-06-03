@@ -1,6 +1,6 @@
 package dw.smaple.model;
 
-public enum authorityEnum {
+public enum AuthorityEnum {
     user,
     admin;
 }
