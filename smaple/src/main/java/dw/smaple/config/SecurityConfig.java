@@ -28,15 +28,18 @@ public class SecurityConfig {
         return http
                 .authorizeRequests(auth -> auth
                         .requestMatchers(
-                                new AntPathRequestMatcher("/**")
-//                                new AntPathRequestMatcher("/products/**"),
-//                                new AntPathRequestMatcher("/user/login"),
-//                                new AntPathRequestMatcher("/user/signup"),
+//                                new AntPathRequestMatcher("/"),
+//                                new AntPathRequestMatcher("/**"),
+                                new AntPathRequestMatcher("/products/**"),
+                                new AntPathRequestMatcher("/smaple/**"),
+                                new AntPathRequestMatcher("/smaple/signup"),
+                                new AntPathRequestMatcher("/user/login"),
+                                new AntPathRequestMatcher("/user/signup"),
+                                new AntPathRequestMatcher("/signup"),
 //                                // ↑ WAS까지 가서 통과해야되는 것들
-//                                new AntPathRequestMatcher("/login"),
-//                                new AntPathRequestMatcher("/gameshop/**"),
-//                                new AntPathRequestMatcher("/css/**"),
-//                                new AntPathRequestMatcher("/js/**")
+                                new AntPathRequestMatcher("/login"),
+                                new AntPathRequestMatcher("/css/**"),
+                                new AntPathRequestMatcher("/js/**")
                                 // ↑ TOMCAT까지 가서 통과해야되는 것들
                         ).permitAll()
                         .anyRequest().authenticated())

@@ -13,24 +13,27 @@ public class ViewController {
     public String articles(){
         return "articles";
     }
-    @GetMapping("/sample/index.html")
+    @GetMapping("/smaple/index.html")
     public String index(){
         return "index";
     }
-
-    @GetMapping("/sample/singleProduct.html")
+    @GetMapping("/smaple/signup.html")
+    public String signup(){
+        return "signup";
+    }
+    @GetMapping("/smaple/singleProduct.html")
     public String singleProduct(){
         return "singleProduct";
     }
-    @GetMapping("/sample/login")
+    @GetMapping("/smaple/login.html")
     public String login(){
         return "login";
     }
-    @GetMapping("/sample/cart.html")
+    @GetMapping("/smaple/cart.html")
     public String cart(){
         return "cart";
     }
-    @GetMapping("/sample/myPage.html")
+    @GetMapping("/smaple/myPage.html")
     public String myPage(){
         return "myPage";
     }

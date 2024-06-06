@@ -1,5 +1,6 @@
 package dw.smaple.dto;
 
+import dw.smaple.model.Authority;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

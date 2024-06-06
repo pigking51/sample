@@ -31,9 +31,12 @@ public class UserService {
         authority.setAuthorityName("ROLE_USER");
         User user = new User(userDto.getUserId(),
                 userDto.getUserName(),
-                userDto.getUserEmail(),
                 bCryptPasswordEncoder.encode(userDto.getPassword()),
+                userDto.getUserEmail(),
                 authority,
+                userDto.getGender(),
+                userDto.getAge(),
+                userDto.getBirthday(),
                 LocalDateTime.now());
         return userRepository.save(user).getUserId();
 
